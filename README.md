@@ -58,12 +58,14 @@ npm run dev
 _BACKEND_PROJECT_
 cм. README.md
 
-#### Деплой
+#### Деплой \*\* Хостинг на пробный период 10 дней (с 19-04-2024)
+
+[Project Management System](https://pro-vacancy.pp.ua)
 
 Приложение развернуто:
 _BACKEND_PROJECT_ на платформе Render.com, и доступно по следующему адресу: [BACKEND_PROJECT](https://test-trood-backend.onrender.com)
 
-Приложение доступно по адресу: [BACKEND_PROJECT](https://pro-vacancy.pp.ua)
+_FRONTEND_PROJECT_ на платформе nic.ua, и доступно по следующему адресу: [Project Management System](https://pro-vacancy.pp.ua)
 
 #### Структура проекта
 
@@ -132,7 +134,7 @@ README.md — Документация по проекту.
 
 #### Контакты
 
-*Элла Кадряева*
+_Элла Кадряева_
 ella.kadriaieva@gmail.com
 GitHub: https://github.com/ella-kadriaeva
 
