@@ -20,7 +20,7 @@ export default function Card({ item }) {
         <p></p>
         <ul className="card__list">
           <li className="card__item">Description: {description} </li>
-          <li className="card__item">Steck: {field} </li>
+          <li className="card__item">Stack: {field} </li>
           <li className="card__item">Deadline: {deadline} </li>
           <li className="card__item">Experience: {experience} </li>
           <li className="card__item">Project #{id} </li>
