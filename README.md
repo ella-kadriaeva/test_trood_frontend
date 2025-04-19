@@ -48,7 +48,7 @@ npm (или yarn)
 
 #### Шаги для запуска проекта:
 
-Склонируйте репозиторий:
+Склонируйте репозитории:
 _FRONTEND_PROJECT_
 git clone https://github.com/ella-kadriaeva/test_trood_frontend
 cd front-app
@@ -56,24 +56,30 @@ npm install
 npm run dev
 
 _BACKEND_PROJECT_
+git clone https://github.com/ella-kadriaeva/test_trood_backend
 cм. README.md
 
 #### Деплой 
 
-[Project Management System](https://pro-vacancy.pp.ua)
+[Project](https://test-trood-frontend.vercel.app)
 
 Приложение развернуто:
 _BACKEND_PROJECT_ на платформе Render.com, и доступно по следующему адресу: [BACKEND_PROJECT](https://test-trood-backend.onrender.com)
 
-_FRONTEND_PROJECT_ на платформе nic.ua, и доступно по следующему адресу: [Project Management System](https://pro-vacancy.pp.ua)
+_FRONTEND_PROJECT_ на платформе vercel, и доступно по следующему адресу: [FRONTEND_PROJECT] (https://test-trood-frontend.vercel.app)
 
 #### Структура проекта
 
 src/ — Исходный код приложения.
+
 components/ — Компоненты, такие как формы, карточки проектов и вакансий.
+
 pages/ — Страницы, включая страницы создания и редактирования проектов и вакансий.
+
 utils/ — Утилиты для обработки данных (например, нормализация даты).
+
 App.js — Основной компонент приложения, обрабатывающий маршруты.
+
 README.md — Документация по проекту.
 
 Примечания

@@ -9,6 +9,7 @@ const Vacancies = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const projectId = location.state?.projectId;
+
   const fields = [
     {
       name: "title",
@@ -80,6 +81,12 @@ const Vacancies = () => {
           <Button type="button" text="Go to projects" onClick={handleGoClick} />
         )}
       </div>
+      {!projectId && (
+        <p>
+          To link a project number and a vacancy, create a vacancy while on the
+          project card
+        </p>
+      )}
       <Form fields={fields} onSubmit={onSubmit} submitText="Create vacancy" />
     </div>
   );

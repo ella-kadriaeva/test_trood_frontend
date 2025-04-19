@@ -82,7 +82,7 @@ const Projects = () => {
     reset();
 
     setTimeout(() => {
-      navigate("/");
+      navigate("/projects");
     }, 1500);
   };
 
