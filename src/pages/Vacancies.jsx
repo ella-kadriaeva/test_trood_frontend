@@ -61,7 +61,7 @@ const Vacancies = () => {
     setTimeout(() => navigate(`/projects/${projectId}`), 1500);
   };
   const handleGoClick = () => {
-    navigate(`/`);
+    navigate(`/projects`);
   };
   return (
     <div className="projects__page">

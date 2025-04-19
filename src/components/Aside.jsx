@@ -9,7 +9,7 @@ const Aside = () => {
       <nav className="navbar">
         <ul className="navbar-list">
           <NavLink className={setActiveLink} to="/">
-            Main page
+            Home
           </NavLink>
           <NavLink className={setActiveLink} to="/projects" end={false}>
             Projects

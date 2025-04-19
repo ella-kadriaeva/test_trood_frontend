@@ -58,7 +58,7 @@ npm run dev
 _BACKEND_PROJECT_
 cм. README.md
 
-#### Деплой \*\* Хостинг на пробный период 10 дней (с 19-04-2024)
+#### Деплой 
 
 [Project Management System](https://pro-vacancy.pp.ua)
 

@@ -13,7 +13,7 @@ export default function Card({ item }) {
     field = "Front-end"
   } = item;
   return (
-    <Link to={`projects/${id}`}>
+    <Link to={`${id}`}>
       <div className="card">
         <h3 className="card__title">{name}</h3>
 

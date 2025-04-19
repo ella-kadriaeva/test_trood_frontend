@@ -40,7 +40,7 @@ const MainPage = () => {
     <div className="main__page">
       <div className="title__block">
         <h1 className="title">Active projects</h1>
-        <Button text="Create project" isLink={true} path="/projects" />
+        <Button text="Create project" isLink={true} path="/projects/create" />
       </div>
 
       <div className="active__block">
