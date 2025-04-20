@@ -14,8 +14,9 @@
   text-transform: uppercase;
   transition: filter 300ms;
 }
-.logo:hover {
-  color: #9ca3af;
+.logo:hover,
+.btn-logout:hover {
+  color: #529584;
 }
 .header__user-block {
   display: flex;
@@ -30,6 +31,9 @@
   height: 32px;
   border-radius: 50%;
   background-color: #dbe3e1;
+}
+.header__user-block--avatar:hover {
+  border: 2px solid #529584;
 }
 .aside {
   min-height: calc(100vh - 112px);
@@ -64,9 +68,11 @@
   color: #9ca3af;
   border: none;
   background-color: transparent;
-  padding: 5px 0;
+  padding: 20px 0;
   text-align: start;
+  cursor: pointer;
 }
+
 .card {
   min-width: 508px;
   border-radius: 24px;
