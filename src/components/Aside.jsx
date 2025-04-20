@@ -9,7 +9,7 @@ const Aside = () => {
       <nav className="navbar">
         <ul className="navbar-list">
           <NavLink className={setActiveLink} to="/">
-            Home
+            Main Page
           </NavLink>
           <NavLink className={setActiveLink} to="/projects" end={false}>
             Projects
@@ -19,12 +19,6 @@ const Aside = () => {
           </NavLink>
           <NavLink className={setActiveLink} to="/people">
             People
-          </NavLink>
-          <NavLink className={setActiveLink} to="/tests">
-            Tests
-          </NavLink>
-          <NavLink className={setActiveLink} to="/activities">
-            Activities
           </NavLink>
           <NavLink className={setActiveLink} to="/settings">
             Settings

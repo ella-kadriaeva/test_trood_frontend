@@ -6,7 +6,7 @@ import { getAllProjects } from "../utils/fetchProject";
 import SwiperBlock from "../components/SwiperBlock";
 import Button from "../components/Button";
 
-const MainPage = () => {
+const AllProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -65,4 +65,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default AllProjects;

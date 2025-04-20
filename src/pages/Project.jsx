@@ -7,7 +7,7 @@ import { checkDate, normalizeDate } from "../utils/checkDate";
 
 import Form from "../components/Form";
 
-const Projects = () => {
+const Project = () => {
   const navigate = useNavigate();
   const fields = [
     {
@@ -94,4 +94,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;

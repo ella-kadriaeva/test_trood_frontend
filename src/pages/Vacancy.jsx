@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import Form from "../components/Form";
 import Button from "../components/Button";
 
-const Vacancies = () => {
+const Vacancy = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const projectId = location.state?.projectId;
@@ -92,4 +92,4 @@ const Vacancies = () => {
   );
 };
 
-export default Vacancies;
+export default Vacancy;

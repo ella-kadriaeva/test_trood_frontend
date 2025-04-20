@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { checkDate, normalizeDate } from "../utils/checkDate";
 
 import Button from "./Button";
-export default function ReusableForm({
+export default function Form({
   fields,
   onSubmit,
   submitText = "Submit"

@@ -12,7 +12,7 @@ const ProjectDetails = () => {
   const navigate = useNavigate();
 
   const handleCreateVacancy = () => {
-    navigate("/vacancy", { state: { projectId: id } });
+    navigate("/vacancy/create", { state: { projectId: id } });
   };
 
   const [project, setProject] = useState();

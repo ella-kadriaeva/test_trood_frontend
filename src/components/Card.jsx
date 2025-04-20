@@ -9,19 +9,24 @@ export default function Card({ item }) {
     description,
     experience,
     id,
+    country,
     name,
+    title,
     field = "Front-end"
   } = item;
   return (
     <Link to={`${id}`}>
       <div className="card">
-        <h3 className="card__title">{name}</h3>
-
-        <p></p>
+        {title ? (
+          <h3 className="card__title">{title}</h3>
+        ) : (
+          <h3 className="card__title">{name}</h3>
+        )}
         <ul className="card__list">
-          <li className="card__item">Description: {description} </li>
+          <li className="card__item card__desc">Description: {description} </li>
           <li className="card__item">Stack: {field} </li>
-          <li className="card__item">Deadline: {deadline} </li>
+          {deadline && <li className="card__item">Deadline: {deadline} </li>}
+          {country && <li className="card__item">Country: {country} </li>}
           <li className="card__item">Experience: {experience} </li>
           <li className="card__item">Project #{id} </li>
         </ul>

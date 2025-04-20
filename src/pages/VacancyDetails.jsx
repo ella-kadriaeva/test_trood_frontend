@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import Button from "../components/Button";
 
-const VacancieDetails = () => {
+const VacancyDetails = () => {
   const { id } = useParams();
 
   const navigate = useNavigate();
@@ -162,4 +162,4 @@ const VacancieDetails = () => {
   );
 };
 
-export default VacancieDetails;
+export default VacancyDetails;

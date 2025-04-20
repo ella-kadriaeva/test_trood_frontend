@@ -3,11 +3,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Layout from "./components/Layout";
-import MainPage from "./pages/MainPage";
-import Projects from "./pages/Projects";
+import AllProjects from "./pages/AllProjects";
+import Project from "./pages/Project";
 import ProjectDetails from "./pages/ProjectDetails";
-import Vacancies from "./pages/Vacancies";
-import VacancieDetails from "./pages/VacancieDetails";
+import AllVacancies from "./pages/AllVacancies";
+import Vacancy from "./pages/Vacancy";
+import VacancyDetails from "./pages/VacancyDetails";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 function App() {
@@ -16,11 +17,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="projects" element={<MainPage />} />
+          <Route path="projects" element={<AllProjects />} />
           <Route path="projects/:id" element={<ProjectDetails />} />
-          <Route path="projects/create" element={<Projects />} />
-          <Route path="vacancy" element={<Vacancies />} />
-          <Route path="vacancy/:id" element={<VacancieDetails />} />
+          <Route path="projects/create" element={<Project />} />
+          <Route path="vacancy" element={<AllVacancies />} />
+          <Route path="vacancy/create" element={<Vacancy />} />
+          <Route path="vacancy/:id" element={<VacancyDetails />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

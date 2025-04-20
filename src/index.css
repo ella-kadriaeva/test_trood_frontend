@@ -92,6 +92,17 @@
   padding-left: 15px;
   display: flex;
   align-items: flex-end;
+  text-align: left;
+}
+.card__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  word-wrap: break-word;
+  max-height: 20px;
 }
 .card__footer {
   display: flex;
