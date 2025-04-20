@@ -32,7 +32,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="pro__links"
-            href="https://github.com/ella-kadriaeva/test_trood_frontend"
+            href="https://github.com/ella-kadriaeva/test_trood_backend"
           >
             &nbsp; готовая версия бэкенда
           </a>
@@ -79,7 +79,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="pro__links"
-              href="https://github.com/ella-kadriaeva/test_trood_frontend"
+              href="https://github.com/ella-kadriaeva/test_trood_backend"
             >
               Backend-project - готовая версия бэкенда.
             </a>
