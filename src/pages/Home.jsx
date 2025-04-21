@@ -16,27 +16,26 @@ const Home = () => {
         </div>
 
         <p className="home__text title__margin">
-          Данный проект является тестовым заданием для участия в стажировке. В
-          рамках выполнения задания была разработана&nbsp;
+          This project is a test task for participation in the internship.
+          During the task, part of the frontend &nbsp;
           <a
             className="pro__links"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/ella-kadriaeva/test_trood_frontend"
           >
-            часть фронтенд-приложения
+            part of the frontend
           </a>
-          &nbsp; с использованием React. Для взаимодействия с данными
-          использовалась &nbsp;
+          &nbsp; applications were developed using React. A &nbsp;
           <a
             target="_blank"
             rel="noopener noreferrer"
             className="pro__links"
             href="https://github.com/ella-kadriaeva/test_trood_backend"
           >
-            &nbsp; готовая версия бэкенда
+            &nbsp; ready-made version of the backend
           </a>
-          .
+          was used to interact with the data.
         </p>
         <p className="home__text title__margin">
           <a
@@ -45,22 +44,22 @@ const Home = () => {
             rel="noopener noreferrer"
             href="https://test-trood-backend.onrender.com/"
           >
-            Подождите, пока сервер проснется! Спасибо!
+            Please wait for the server to wake up! Thank you!
           </a>
         </p>
         <p className="home__text title__margin">
-          Деплой проекта выполнен на бесплатный render.com который постоянно
-          засыпает: "Your free instance will stop when idle, which can delay
-          requests for 50 seconds or more."
+          "Free instance will stop when idle, which can delay requests for 50
+          seconds or more."
         </p>
         <p className="title__margin">
-          Для отображения проектов с прошедшим дедлайном, как завершённые,
-          базовой датой стравнения выбрана дата "2025-07-01", чтобы проект 30.06
-          попадал в проекты с прошедшим дедлайном. Для последующей корректной
-          работы нужно будет сравнивать время дедлайна проекта с текущей датой.
+          To display projects with a past deadline as completed, the base date
+          of comparison is set to "2025-07-01" so that the project 30.06 falls
+          into the projects with a past deadline. For subsequent correct work,
+          it will be necessary to compare the project deadline time with the
+          current date.
         </p>
         <p className="title__margin home__text">
-          Ссылки на репозиторий проекта на GitHub
+          Links to the project repository on GitHub
         </p>
         <ol>
           <li>
@@ -70,7 +69,7 @@ const Home = () => {
               rel="noopener noreferrer"
               href="https://github.com/ella-kadriaeva/test_trood_frontend"
             >
-              Frontend-project - выполненная часть фронтенд-приложения
+              Frontend-project - completed part of the frontend application
             </a>
           </li>
 
@@ -81,7 +80,7 @@ const Home = () => {
               className="pro__links"
               href="https://github.com/ella-kadriaeva/test_trood_backend"
             >
-              Backend-project - готовая версия бэкенда.
+              Backend-project - ready version of the backend.
             </a>
           </li>
         </ol>

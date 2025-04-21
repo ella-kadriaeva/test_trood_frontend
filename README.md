@@ -1,55 +1,83 @@
 ### Project Management System
 
-Описание
-Этот проект представляет собой систему для управления проектами и вакансиями, позволяющую создавать, редактировать, удалять проекты и вакансии. Включает функциональность для сортировки проектов по статусу (активные/завершённые) и добавления вакансий для каждого проекта.
-Данные хранятся локально в LocalStorage, что позволяет сохранять их при перезагрузке страницы.
+Description
+This project is a system for managing projects and vacancies. It allows users to create, edit, and delete both projects and job openings. The system includes functionality for filtering projects by status (active/completed) and adding vacancies to each project.
+All data is stored locally in LocalStorage, which ensures persistence even after the page is reloaded.
 
-### Основной функционал
+### Core Functionality
 
-Управление проектами:
-Отображение списка проектов на вкладке Projects:
-Разделение на активные и завершённые проекты (по дедлайну).
-Для каждого проекта отображаются поля: название, направление (сфера — дизайн, разработка, маркетинг), требуемый от специалистов опыт, дедлайн, описание.
+Project Management:
+The Projects tab displays a list of all projects, divided into active and completed based on their deadline.
+Each project includes the following fields:
 
-Создание проекта:
-Открывается отдельная страница с формой для внесения данных проекта.
+Title
 
-Удаление проекта:
-Возможность удалить проект.
+Field (e.g., design, development, marketing)
 
-Управление вакансиями:
-Добавление вакансий к проекту:
-Поля: название, направление, опыт, страна, описание.
+Required experience
 
-Редактирование вакансии:
-Открывается отдельная страница для редактирования вакансии.
+Deadline
 
-Удаление вакансии:
-Возможность удалить вакансию.
+Description
 
-Отображение списка вакансий на странице проекта:
-В блоке "Hired people" отображаются все созданные вакансии для данного проекта.
+Project Creation:
+A separate page opens with a form to enter project details.
 
-#### Технологии
+Project Deletion:
+It is possible to delete a project.
 
-Проект разработан с использованием следующих технологий:
-React — для создания компонентов и взаимодействия с состоянием.
-React Hook Form — для работы с формами.
-CSS — для стилизации компонентов.
-LocalStorage — для хранения данных на клиенте.
-React Router — для навигации между страницами.
-React-toastify — для отображения уведомлений о действиях (создание, удаление и т.д.).
+Vacancy Management:
 
-#### Установка и запуск
+Adding Vacancies to a Project:
+Fields include:
 
-Требования:
-для фронтенд части Node.js (рекомендуется версия 14.x или выше)
+Title
+
+Field
+
+Experience
+
+Country
+
+Description
+
+Vacancy Editing:
+A separate page opens to edit the selected vacancy.
+
+Vacancy Deletion:
+It is possible to delete a vacancy.
+
+Displaying the List of Vacancies on the Project Page:
+All created vacancies for the selected project are shown in the "Hired people" section.
+
+#### Technologies
+The project was developed using the following technologies:
+
+React – for building components and managing application state.
+
+React Hook Form – for handling form logic and validation.
+
+CSS – for styling components.
+
+LocalStorage – for storing data on the client side.
+
+React Router – for navigating between pages.
+
+React-Toastify – for displaying notifications (e.g., creation, deletion, etc.).
+
+#### Installation and Launch
+Requirements:
+For the frontend:
+
+Node.js
+
 npm
-для бекенд части указаны в Readme backand-project
 
-#### Шаги для запуска проекта:
+For the backend:
+Requirements are listed in the README.md of the backend project.
 
-Склонируйте репозитории:
+#### Steps to Run the Project
+Clone the repositories:
 _FRONTEND_PROJECT_
 git clone https://github.com/ella-kadriaeva/test_trood_frontend
 cd front-app
@@ -60,89 +88,103 @@ _BACKEND_PROJECT_
 git clone https://github.com/ella-kadriaeva/test_trood_backend
 cм. README.md
 
-#### Деплой 
+#### Deployment
 
 [Project](https://test-trood-frontend.vercel.app)
 
-Приложение развернуто:
-_BACKEND_PROJECT_ на платформе Render.com, и доступно по следующему адресу: [BACKEND_PROJECT](https://test-trood-backend.onrender.com)
+The backend is deployed on Render.com and is available at:
+[BACKEND_PROJECT](https://test-trood-backend.onrender.com)
 
-_FRONTEND_PROJECT_ на платформе vercel, и доступно по следующему адресу: [FRONTEND_PROJECT] (https://test-trood-frontend.vercel.app)
+The frontend is deployed on Vercel and is available at:
+[FRONTEND_PROJECT] (https://test-trood-frontend.vercel.app)
 
-#### Структура проекта
+#### Project Structure
+src/ — The source code of the application.
 
-src/ — Исходный код приложения.
+components/ — Components such as forms, project and vacancy cards.
 
-components/ — Компоненты, такие как формы, карточки проектов и вакансий.
+pages/ — Pages, including the project and vacancy creation/editing pages.
 
-pages/ — Страницы, включая страницы создания и редактирования проектов и вакансий.
+utils/ — Utilities for data processing (e.g., date normalization).
 
-utils/ — Утилиты для обработки данных (например, нормализация даты).
+App.js — The main application component that handles routing.
 
-App.js — Основной компонент приложения, обрабатывающий маршруты.
+README.md — Project documentation.
 
-README.md — Документация по проекту.
+Notes
+All data is stored locally in LocalStorage and is not saved on the server.
 
-Примечания
-Все данные хранятся локально в LocalStorage и не сохраняются на сервере.
+To check the data handling, open the Developer Tools, go to the "Application" tab, where the data will be visible in LocalStorage.
 
-Для проверки работы с данными, откройте инструменты разработчика и перейдите на вкладку "Application", где будут отображаться данные в LocalStorage.
+#### Testing Instructions
+To test the project, please follow these steps:
 
-#### Инструкция по тестированию
+1. Testing the project creation functionality:
 
-Для тестирования проекта выполните следующие шаги:
+Go to the Create Project page by clicking the Create Project button.
 
-1. Тестирование функционала создания проекта:
-   Перейдите на страницу Создание проекта по кнопке Create Project.
-   Заполните форму с полями: Название проекта.Направление.Опыт.Дедлайн.Описание.
-   Нажмите кнопку Создать проект.
+Fill in the form with the following fields: Project Title, Field, Experience, Deadline, Description.
 
-Убедитесь, что проект появляется в списке на странице Projects с правильными данными.
+Click the Create Project button.
 
-2. Тестирование редактирования проекта:
-   Перейдите на страницу проекта с Projects кликом по карточке проекта.
-   Нажмите кнопку Редактировать.
-   Измените хотя бы одно поле в форме редактирования проекта.
-   Сохраните изменения.
-   Убедитесь, что проект обновился в списке на  странице Projects.
+Verify that the project appears in the list on the Projects page with the correct data.
 
-3. Тестирование удаления проекта:
-   На странице Projects перейдите к проекту, который хотите удалить кликом по карточке проекта.
-   Нажмите кнопку Удалить проект.
-   Убедитесь, что проект не отображается в списке на странице Projects.
+2. Testing project editing:
 
-4. Тестирование функционала вакансий:
-   Перейдите на страницу проекта кликом по карточке проекта.
-   Нажмите кнопку Add vacancy
-   Добавьте вакансию с полями:
-   Название вакансии./Направление./Опыт./Страна./Описание.
+Go to the project page from the Projects tab by clicking on the project card.
 
-Убедитесь, что вакансия появилась на странице проекта в блоке Hired people и Vacancies.
+Click the Edit button.
 
-5.  Редактирование функционала вакансий:
-    Перейдите на страницу вакансии кликом по кнопке More->.
-    Нажмите кнопку Edit vacancy
-    Измените хотя бы одно поле в форме редактирования вакансии.
-    Сохраните изменения.
-    Убедитесь, что данные вакансии обновились в списке на странице проекта и странице Vacancies.
+Modify at least one field in the project edit form.
 
-Попробуйте удалить вакансию, убедитесь, что изменения сохраняются и отображаются корректно.
+Save the changes.
 
-6. Тестирование сортировки проектов:
-   Перейдите на главную страницу проектов Projects.
+Verify that the project is updated in the list on the Projects page.
 
-Убедитесь, что проекты с прошедшим дедлайном отображаются как завершённые, а проекты с будущим дедлайном — как активные. Для этого базовой датой стравнения выбрана дата "2025-07-01", чтобы проект 30.06 попадал в проекты с прошедшим дедлайном. Для последующей корректной работы нужно раскомментировать в коде строку 21 в файле utils/checkData.js и закоментировать строку 22. Т.о. дата проектов будет сравниваться с текущей датой.
+3. Testing project deletion:
 
-7. Проверка локального хранения данных:
-   Откройте инструменты разработчика в браузере.
-   Перейдите на вкладку Application.
+On the Projects page, go to the project you want to delete by clicking on the project card.
 
-Убедитесь, что данные о проектах и вакансиях сохраняются в LocalStorage.
+Click the Delete Project button.
 
-#### Контакты
+Verify that the project no longer appears in the list on the Projects page.
 
-_Элла Кадряева_
-ella.kadriaieva@gmail.com
-GitHub: https://github.com/ella-kadriaeva
+4. Testing the vacancies functionality:
 
-#### test_trood_frontend
+Go to the project page by clicking on the project card.
+
+Click the Add Vacancy button.
+
+Add a vacancy with the following fields: Vacancy Title, Field, Experience, Country, Description.
+
+Verify that the vacancy appears on the project page under the Hired People and Vacancies sections.
+
+5. Testing vacancy editing:
+
+Go to the vacancy page by clicking on the More button →.
+
+Click the Edit Vacancy button.
+
+Modify at least one field in the vacancy edit form.
+
+Save the changes.
+
+Verify that the vacancy data is updated in the list on the project page and the Vacancies page.
+
+Try deleting the vacancy and verify that the changes are saved and displayed correctly.
+
+6. Testing project sorting:
+
+Go to the Projects main page.
+
+Verify that projects with past deadlines are shown as completed, while projects with future deadlines are shown as active.
+For this, the base comparison date is set to "2025-07-01", so a project with a deadline of 30.06 will appear as completed.
+To ensure the correct functioning, uncomment line 21 in the utils/checkData.js file and comment out line 22. This way, project dates will be compared with the current date.
+
+Checking local data storage:
+
+Open the browser's Developer Tools.
+
+Go to the Application tab.
+
+Verify that the project and vacancy data is stored in LocalStorage.
